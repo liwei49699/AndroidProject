@@ -7,23 +7,24 @@ pluginManagement {
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+//    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
         google()
         mavenCentral()
     }
 }
 rootProject.name = "AndroidProject"
-include ':app'
+//include ':app'
+//
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//        settingsDir.parentFile,
+//        'flutter_project/.android/include_flutter.groovy'
+//))
 
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-        settingsDir.parentFile,
-        'flutter_project/.android/include_flutter.groovy'
-))
-
-include ':flutter_project'
-project(':flutter_project').projectDir = new File('../flutter_project')
-include ':nativelib'
+//include ':flutter_project'
+//project(':flutter_project').projectDir = new File('../flutter_project')
+//include ':nativelib'
 include ':composelib'
-include ':binderlib'
-include ':binderserver'
+//include ':binderlib'
+//include ':binderserver'
