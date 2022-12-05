@@ -14,17 +14,19 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidProject"
-//include ':app'
-//
-//setBinding(new Binding([gradle: this]))
-//evaluate(new File(
-//        settingsDir.parentFile,
-//        'flutter_project/.android/include_flutter.groovy'
-//))
+include ':app'
 
-//include ':flutter_project'
-//project(':flutter_project').projectDir = new File('../flutter_project')
-//include ':nativelib'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'flutter_project/.android/include_flutter.groovy'
+))
+
+include ':flutter_project'
+project(':flutter_project').projectDir = new File('../flutter_project')
+include ':nativelib'
 include ':composelib'
-//include ':binderlib'
-//include ':binderserver'
+include ':binderlib'
+include ':binderserver'
+include ':dynamicfeature'
+include ':dynamicfeature2'
